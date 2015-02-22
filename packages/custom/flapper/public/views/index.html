@@ -1,0 +1,65 @@
+<div class="" data-ng-controller="FlapperController">
+
+  <div class="page-header">
+    <h1>Flapper News</h1>
+  </div>
+
+  <div style="height: 100px">
+  </div>
+
+  <div ng-repeat="post in posts | orderBy: '-upvotes'">
+    <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(post)">
+    </span>
+    {{ post.upvotes }}
+    <span style="font-size:20px; margin-left:10px;">
+      <a ng-show="post.link" href="{{ post.link }}">
+        {{ post.title }}
+      </a>
+      <span ng-hide="post.link">
+        {{ post.title }}
+      </span>
+    </span>
+    <span class="glyphicon glyphicon-remove" ng-click="deletePost(post)"/>
+  </div>
+
+  <div>
+    <form ng-submit="addPost()" style="margin-top:30px;">
+      <h3>Add a new post</h3>
+        <div class="form-group">
+          <input class="form-control" type="text" ng-model="title" name="title" placeholder="Post title"/>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Link" ng-model="link"/>
+        </div>
+      <button type="submit" class="btn btn-primary">Add post</button>
+    </form>
+
+
+  </div>
+
+  <!-- <h1>Example view from your new awesome package</h1>
+  <h2>Package: {{package.name}}</h2>
+  <ol>
+    <li>
+      <a href="flapper/example/anyone">Server route that anyone can access</a>
+    </li>
+    <li>
+      <a href="flapper/example/auth">Server route that requires authentication</a>
+    </li>
+    <li>
+      <a href="flapper/example/admin">Server route that requires admin user</a>
+    </li>
+    <li>
+      <a href="flapper/example/render">Raw Html rendering example from using swig</a>
+    </li>
+  </ol>
+  <h3><img src="/flapper/assets/img/logo.png" /></h3>
+  </br>
+  <p class="alert alert-info">You can find your package in /packages/flapper</p>
+  </br>
+  <p class="alert alert-warning">MEAN versions prior to 0.3.2 will be in /node_modules/flapper</p>
+  </br>
+  <h3><a href="http://www.mean.io/#!/docs">Documentation</a></h3>
+  </br> -->
+</div>
+
