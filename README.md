@@ -1,6 +1,7 @@
 Tutorials followed:
 
 * https://thinkster.io/mean-stack-tutorial/
+* http://mean.io/blog/2014/06/extending-mean-io/
 * ng-book
 
 Deployed at heroku:
