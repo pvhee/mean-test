@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/mean-prod',
+  db: 'mongodb://JLixVrtxYMdO:qbMkJupXAPoQ@mongosoup-cont002.mongosoup.de:32016/cc_JLixVrtxYMdO',
   /**
    * Database options that will be passed directly to mongoose.connect
    * Below are some examples.
@@ -27,7 +27,7 @@ module.exports = {
     */
   },
   app: {
-    name: 'MEAN - A Modern Stack - Production'
+    name: 'MEAN - A Modern Stack - Production (with our Flapper tests)'
   },
   facebook: {
     clientID: 'APP_ID',
