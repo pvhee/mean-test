@@ -1,3 +1,17 @@
+Tutorials followed:
+
+* https://thinkster.io/mean-stack-tutorial/
+* http://mean.io/blog/2014/06/extending-mean-io/
+* ng-book
+
+Deployed at heroku:
+
+* https://mean-tests.herokuapp.com
+
+--
+
+From mean.io 
+
 [![Build Status](https://travis-ci.org/linnovate/mean.svg?branch=master)](https://travis-ci.org/linnovate/mean)
 [![Dependencies Status](https://david-dm.org/linnovate/mean.svg)](https://david-dm.org/linnovate/mean)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
