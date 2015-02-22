@@ -1,8 +1,8 @@
 'use strict';
 
 /* jshint -W098 */
-angular.module('mean.flapper').controller('FlapperController', ['$scope', 'stateParams', 'postsService', 'Global', 'Flapper',
-  function($scope, $stateParams, postsService, Global, Flapper) {
+angular.module('mean.flapper').controller('FlapperController', ['$scope', 'postsService', 'Global', 'Flapper',
+  function($scope, postsService, Global, Flapper) {
 
 
     var loadAll = function() {
